@@ -1,0 +1,93 @@
+body {
+  background-color: #409995; }
+  body h1, body h2, body h3, body h4, body h5 {
+    font-family: 'Press Start 2P', cursive;
+    color: #EB8634 !important; }
+  body h1::selection, body h2::selection, body h3::selection, body h4::selection, body h5::selection {
+    color: #EB8634; }
+  body p {
+    font-family: "Ubuntu Mono";
+    font-size: 1.6em;
+    color: white; }
+  body p::selection {
+    background-color: #00565F; }
+  body .hidden-drugs, body .hidden-wallet, body .hidden-trophy, body .hidden-sunglasses, body .hidden-book, body .hidden-slingshot {
+    display: none; }
+  body .jumbotron {
+    background-color: #00565F; }
+
+.inventory {
+  padding: 15px;
+  border: 4px #00565F solid;
+  border-radius: 5px;
+  overflow: hidden; }
+  .inventory .inventory-item {
+    color: #00565F !important; }
+  .inventory .inventory-title {
+    color: #EB8634 !important;
+    margin-top: 0px;
+    text-shadow: 3px 3px 0 #00565F, -1px -1px 0 #00565F, 1px -1px 0 #00565F, -1px 1px 0 #00565F, 1px 1px 0 #00565F;
+    text-align: center; }
+  .inventory .inventory-tile {
+    clear: both;
+    text-align: center; }
+  .inventory .inventory-image {
+    max-height: 80px;
+    max-width: 100px;
+    float: left;
+    margin-right: 10px; }
+  .inventory h4 .inventory-item {
+    margin-top: 30px;
+    float: right; }
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.site-content {
+  flex: 1; }
+
+.game-btn {
+  font-family: "Ubuntu Mono";
+  font-weight: bold;
+  font-size: 1.6em;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 3px 8px;
+  color: #EB8634;
+  background-color: #00565F;
+  border: 0px; }
+
+.game-btn:hover {
+  color: #00565F;
+  background-color: #EB8634; }
+
+#title-image {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 0; }
+
+.start-btn {
+  padding: 15px;
+  font-size: 5em !important;
+  font-family: 'Press Start 2P', cursive;
+  position: absolute;
+  z-index: 10;
+  top: 200px;
+  left: 50px; }
+
+footer {
+  width: 100%;
+  clear: both; }
+
+.game-over {
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 3px 3px 0 #00565F, -1px -1px 0 #00565F, 1px -1px 0 #00565F, -1px 1px 0 #00565F, 1px 1px 0 #00565F; }
+
+.play-again {
+  margin: auto; }
+
+/*# sourceMappingURL=burrito-quest2.css.map */

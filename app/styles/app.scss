@@ -1,0 +1,141 @@
+$black: #010000;
+$orange: #EB8634;
+$teal: #00565F;
+$skyblue: #409995;
+$green: #48B000;
+
+body {
+  background-color: $skyblue;
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Press Start 2P', cursive;
+    color: $orange !important;
+  }
+
+  h1::selection, h2::selection, h3::selection, h4::selection, h5::selection {
+    color: $orange;
+  }
+
+  p {
+    font-family: 'Ubuntu Mono', ;
+    font-size: 1.6em;
+    color: white;
+  }
+
+  p::selection {
+    background-color: $teal;
+  }
+
+  .hidden-drugs, .hidden-wallet, .hidden-trophy, .hidden-sunglasses, .hidden-book, .hidden-slingshot {
+    display: none;
+  }
+  .jumbotron {
+    background-color: $teal;
+  }
+}
+
+.inventory {
+  padding: 15px;
+  border: 4px $teal solid;
+  border-radius: 5px;
+  overflow: hidden;
+
+  .inventory-item {
+    color: $teal !important;
+  }
+
+  .inventory-title {
+    color: $orange !important;
+    margin-top: 0px;
+    text-shadow:
+         3px 3px 0 $teal,
+       -1px -1px 0 $teal,
+        1px -1px 0 $teal,
+        -1px 1px 0 $teal,
+         1px 1px 0 $teal;
+    text-align: center;
+  }
+
+  .inventory-tile {
+    clear: both;
+    text-align: center;
+  }
+
+  .inventory-image {
+    max-height: 80px;
+    max-width: 100px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  h4 .inventory-item {
+    margin-top: 30px;
+    float: right;
+  }
+}
+
+.title-image {
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
+.game-btn {
+  font-family: 'Ubuntu Mono', ;
+  font-weight: bold;
+  font-size: 1.6em;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 3px 8px;
+  color: $orange;
+  background-color: $teal;
+  border: 0px;
+}
+
+.game-btn:hover {
+  color: $teal;
+  background-color: $orange;
+}
+
+#title-image {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 0;
+}
+
+.start-btn {
+  padding: 15px;
+  font-size: 5em !important;
+  font-family: 'Press Start 2P', cursive;
+  position: absolute;
+  z-index: 10;
+  top: 200px;
+  left: 50px;
+}
+footer {
+  width: 100%;
+  clear: both;
+}
+
+.game-over {
+  text-align: center;
+  font-size: 3em;
+  text-shadow:
+       3px 3px 0 $teal,
+     -1px -1px 0 $teal,
+      1px -1px 0 $teal,
+      -1px 1px 0 $teal,
+       1px 1px 0 $teal;
+}
+
+.play-again {
+  margin: auto;
+}
